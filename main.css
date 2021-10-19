@@ -41,6 +41,17 @@ nav {
 
 }
 
+nav a{
+    display:block;
+    padding: 1em;
+}
+
+
+nav a:hover{
+    /* changes links grey */
+    background: rgb(116, 116, 116);
+}
+
 a {
     color:white;
     text-decoration: none;
@@ -66,4 +77,14 @@ a {
     justify-content: space-between;
     align-items: stretch;
 
+}
+
+.footer {
+    /* put the footer all the way on the bottom */
+    padding: 30px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    
 }
