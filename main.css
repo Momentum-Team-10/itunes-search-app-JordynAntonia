@@ -10,6 +10,12 @@ h2 {
 
 }
 
+    .header {
+    padding: 30px;
+    
+    
+}
+
 body {
     background-image: radial-gradient(circle, grey 10%, black)
     
@@ -18,12 +24,16 @@ body {
 nav { 
     /* vertical and spaced out nav bar */
     display: flex;
-    padding: auto 100px;
-    color: white;
+    padding: black, auto 100px;
     text-align: center;
     justify-content: space-around;
-    
 
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    padding: black auto;
 
 }
 
