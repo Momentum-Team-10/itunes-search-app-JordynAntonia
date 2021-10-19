@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     color:  white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ariel', sans-serif;
     background-color: black;
     margin: 5PX;
     display:flex;
@@ -11,6 +11,7 @@ h1 {
 h2 {
 
     margin: 0;
+    margin-bottom: 0;
     background-color: black;
     
 }   
@@ -19,6 +20,7 @@ h2 {
     .header {
     padding: 30px;
     background-color: black;
+    margin-bottom: 0;
     
     
     
@@ -56,7 +58,7 @@ a {
     color:white;
     text-decoration: none;
     padding: black auto;
-
+    font-family: 'Ariel', sans-serif;
 }
 
 .card {
