@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color:  white;
+    
+}
+
+h2 {
+    text-align: center;
+    color: white;
+
+}
+
+body {
+    background-image: radial-gradient(circle, grey 10%, black)
+    
+}
+
+nav { 
+    /* vertical and spaced out nav bar */
+    display: flex;
+    padding: auto 100px;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    
+
+
+}
+
