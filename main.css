@@ -12,8 +12,10 @@ h2 {
 
     margin: 0;
     margin-bottom: 0;
-    background-color: black;
+    text-align:  bottom center;
+    color: black;
     
+
 }   
 
 
@@ -64,20 +66,44 @@ a {
 .card {
     /* white card layouts  */
     background-color: white;
-    /* opacity: 50%; */
+    opacity: 30%;
     width: 40%;
     height: 100px;
     padding: 2px 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    flex-grow: 0;
+    flex-shrink: 1;
+    border: solid white;
 }
+
+/* .cards{
+    /* flex-grow:0 flex-grow:1 width: 24% */
+    /* flex: 0 1 24%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-around;
+     /* */ 
+
+/* } */
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: space-around;
+}
+
+
+.items {
+    display:flex;
+    /* changing the flex direction for container and items caused the text on the card to become even on the left hand side */
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    flex-shrink: 3;
+    text-align: center;
 
 }
 
