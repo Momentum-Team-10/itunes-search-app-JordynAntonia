@@ -51,4 +51,9 @@ fetch(url)
             container.appendChild(musicCard);
 
         }
-    }
+    
+        function renderMusicCard(item) {
+            // how all of the items are displayed on each "card"
+            let musicCard = document.createElement("div");
+
+        }
