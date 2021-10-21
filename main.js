@@ -69,4 +69,5 @@ fetch(url)
 
         function deleteMusicCard(musicCard) {
             let deletemusicCard = document.createElement("sort");
+            
         }
