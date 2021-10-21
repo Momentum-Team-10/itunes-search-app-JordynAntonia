@@ -3,7 +3,7 @@ h1 {
     color:  white;
     font-family: 'Ariel', sans-serif;
     background-color: black;
-    margin: 5PX;
+    margin: 5px;
     display:flex;
     justify-content: space-around;
 }
@@ -12,11 +12,18 @@ h2 {
 
     margin: 0;
     margin-bottom: 0;
-    text-align:  bottom center;
+    text-align: bottom center;
     color: black;
     
 
 }   
+
+p {
+    text-align: center;
+    font-size: medium;
+    
+    font-family: 'Ariel', sans-serif;
+}
 
 
     .header {
@@ -67,11 +74,11 @@ a {
     /* white card layouts  */
     background-color: white;
     opacity: 30%;
-    width: 40%;
-    height: 100px;
+    width: 35%;
+    height: 150px;
     padding: 2px 50px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 5px 0 rgba(0,0,0,0.2);
     flex-grow: 0;
     flex-shrink: 1;
     border: solid white;
@@ -87,23 +94,36 @@ a {
 
 /* } */
 
-.container-button {
+.container-div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: space-around;
+    
+    
+}
+
+.container {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-shrink: 2;
+    flex-grow: 2;
+
 }
 
 
 .items {
     display:flex;
     /* changing the flex direction for container and items caused the text on the card to become even on the left hand side */
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
     align-items:flex-start;
     flex-shrink: 3;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -118,4 +138,16 @@ a {
     color:  white;
     font-family: 'Ariel', sans-serif;
     
+}
+
+.previous-button {
+
+}
+
+.play-button {
+
+}
+
+.next-button {
+
 }
