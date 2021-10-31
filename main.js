@@ -1,3 +1,25 @@
+// getting the music for player
+const audioPlayer = document.getElementById(`audio-player`);
+const api_url = "https://itunes.apple.com/";
+async function getUser() {
+
+// GET request using fetch()
+fetch("https://itunes.apple.com/")
+// converting recieved data to JSON
+.then(response => response.json())
+.then(json => {
+    // Creata a var to store HTML
+    let li = '<tr><th>Name</th></tr>';
+// Loop through each data and add a table row
+json.forEach(user => {
+
+})
+
+
+
+
+
+
 // getting elements
 const form = document.getElementById("form")
 const songImage = document.getElementById(`song-image`)
@@ -13,10 +35,6 @@ const previousButton = document.getElementById(`previous-button`)
 const playButtonIcon = document.getElementById(`play-icon`)
 const playButton = document.getElementById(`play-button`)
 const nextButton = document.getElementById(`next-button`)
-
-// getting the music for player
-const audioPlayer = document.getElementById(`audio-player`);
-const url = "https://itunes.apple.com/search?parameterkeyvalue.";
 
 
 // within the "form" we want to have a list of songs based on a certain Artist, copying the structure that is already on the CSS.
@@ -34,7 +52,7 @@ form.addEventListener("submit", (e) => {
     })
     // promises/respose/data/json
     .then(res => res.json())
-    .then(data => {
+    .then(json => {
         renderMusicCard(data)
     })
 })
