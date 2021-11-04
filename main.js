@@ -4,12 +4,15 @@ const api_url = "https://itunes.apple.com/";
 async function getUser() {
 
 // GET request using fetch()
-fetch("https://itunes.apple.com/")
+fetch("https://api.music.apple.com/v1/storefronts?limit=2", options)
 // converting recieved data to JSON
-.then(response => response.json())
+.the(data => {
+    return data.json();
+})
 .then(json => {
     // Creata a var to store HTML
-    let li = '<tr><th>Name</th></tr>';
+console.log(post.title);
+});
 // Loop through each data and add a table row
 json.forEach(user => {
 
@@ -21,13 +24,13 @@ json.forEach(user => {
 
 
 // getting elements
-const form = document.getElementById("form")
-const songImage = document.getElementById(`song-image`)
-const songTitle = document.getElementById(`song-title`)
-const songArtist = document.getElementById(`song-artist`)
-const artistAlbum = document.getElementById(`artist-album`)
-const songNext = document.getElementById(`song-next-up`)
-const container = document.getElementById(`song-container`)
+const form = document.getElementById(".form")
+const songImage = document.getElementById(`.song-image`)
+const songTitle = document.getElementById(`.song-title`)
+const songArtist = document.getElementById(`.song-artist`)
+const artistAlbum = document.getElementById(`.artist-album`)
+const songNext = document.getElementById(`.song-next-up`)
+const container = document.getElementById(`.song-container`)
 
 
 // getting buttons 
@@ -36,7 +39,10 @@ const playButtonIcon = document.getElementById(`play-icon`)
 const playButton = document.getElementById(`play-button`)
 const nextButton = document.getElementById(`next-button`)
 
-
+const getContent = (search) => {
+    const url = new URL ('https://itunes.apple.com/search');
+    
+}
 // within the "form" we want to have a list of songs based on a certain Artist, copying the structure that is already on the CSS.
 form.addEventListener("submit", (e) => {
     fetch(url, {
