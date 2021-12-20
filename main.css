@@ -1,0 +1,136 @@
+h1 {
+    text-align: center;
+    color:  white;
+    font-family: 'Ariel', sans-serif;
+    background-color: black;
+    margin: 5px;
+    display:flex;
+    justify-content: space-around;
+}
+
+h2 {
+
+    margin: 0;
+    margin-bottom: 0;
+    text-align: bottom center;
+    color: black;
+    
+
+}   
+
+p {
+    text-align: center;
+    font-size: medium;
+    
+    font-family: 'Ariel', sans-serif;
+}
+
+
+    .header {
+    padding: 30px;
+    background-color: black;
+    margin-bottom: 0;
+    
+    
+    
+}
+
+body {
+    background-image: radial-gradient(circle, grey 10%, black)
+    
+}
+
+nav { 
+    /* horizontal and spaced out nav bar */
+    display: flex;
+    padding: black, auto 100px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: auto, 100px;
+    margin: 0;
+
+}
+
+nav a{
+    display:block;
+    padding: 1em;
+}
+
+
+nav a:hover{
+    /* changes links grey */
+    background: rgb(116, 116, 116);
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    padding: black auto;
+    font-family: 'Ariel', sans-serif;
+}
+
+.card {
+    /* white card layouts  */
+    background-color: white;
+    opacity: 30%;
+    width: 35%;
+    height: 150px;
+    padding: 2px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 3px 0 rgba(0,0,0,0.2);
+    flex-grow: 0;
+    flex-shrink: 1;
+    
+    
+}
+
+
+
+.container {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:space-around;
+    /* flex-shrink: 2;
+    flex-grow: 2; */
+
+}
+
+
+.items {
+    display:flex;
+    /* changing the flex direction for container and items caused the text on the card to become even on the left hand side */
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    flex-shrink: 3;
+    text-align: left;
+
+}
+
+.footer {
+    /* put the footer all the way on the bottom */
+    padding: 30px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    text-align: left;
+    color:  white;
+    font-family: 'Ariel', sans-serif;
+    
+}
+
+.previous-button {
+
+}
+
+.play-button {
+
+}
+
+.next-button {
+
+}
